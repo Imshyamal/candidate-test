@@ -1,0 +1,22 @@
+{
+  "name": "angular-assignment",
+  "description": "",
+  "main": "",
+  "authors": [
+    "imshyamal <shyamalkapatel@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "MongoDB",
+    "Expressjs",
+    "Angularjs",
+    "Node",
+    "RESTful",
+    "Bootstrap"
+  ],
+  "homepage": "https://github.com/Imshyamal/candidate-test",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "font-awesome": "^5.0.10"
+  }
+}

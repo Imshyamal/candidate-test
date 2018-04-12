@@ -1,0 +1,29 @@
+<div class="col-md-offset-3 col-md-6" *ngIf="rug">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div>
+        <button type="button" class="btn btn-default" (click)="goBack()">Back</button>
+      </div>
+    </div>
+    <div class="panel-body">
+      <form name="UpdateRugForm">
+        <div class="form-group">
+          <label>Rug Name</label>
+          <input readonly [(ngModel)]="rug.rugName" name="rugName" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Rug Price</label>
+          <input readonly [(ngModel)]="rug.rugPrice" name="rugPrice" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="rugDescr">Rug Description</label>
+          <input readonly id="rugDescr" [(ngModel)]="rug.rugDescr" name="rugDescr" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="rugImgURL">Image</label>
+          <input readonly id="rugImgURL" [(ngModel)]="rug.rugImgURL" name="rugImgURL" type="text" class="form-control">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

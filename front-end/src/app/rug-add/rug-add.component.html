@@ -1,0 +1,46 @@
+<div class="col-md-offset-3 col-md-6" *ngIf="rug">
+  <div class="panel panel-default">
+    <div class="row" style="margin: 0">
+      <div class="col-md-12 text-center form-header">
+        <h4>Add New Rug</h4>
+      </div>
+    </div>
+    <div class="panel-body">
+      <form [formGroup]="rugAddForm"
+            (ngSubmit)="add()"
+            novalidate>
+        <div class="form-group">
+          <label for="rugName">Rug name</label>
+          <input id="rugName"
+                 value="{{rug.rugName}}"
+                 class="form-control"
+                 formControlName="rugName">
+        </div>
+        <div class="form-group">
+          <label for="rugPrice">Rug Price</label>
+          <input id="rugPrice"
+                 class="form-control"
+                 formControlName="rugPrice">
+        </div>
+        <div class="form-group">
+          <label for="rugDescr">Rug Description</label>
+          <input id="rugDescr"
+                 type="rugDescr"
+                 class="form-control"
+                 formControlName="rugDescr">
+        </div>
+        <div class="form-group">
+          <label for="rugImgURL">Image</label>
+          <input id="rugImgURL"
+                 class="form-control"
+                 formControlName="rugImgURL">
+        </div>
+        <div>
+          <button class="btn btn-success"
+                  [disabled]="!rugAddForm.valid">Add Rug</button>
+          <button type="button" class="btn btn-default" (click)="goBack()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
