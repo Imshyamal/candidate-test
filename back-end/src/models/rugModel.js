@@ -9,7 +9,7 @@ export const RugSchema = new Schema({
     },
     rugPrice: {
         type: Number,
-        required: 'Enter rug price'
+        required: 'Enter rugjjjjj price'
     },
   
     rugDescr: {
@@ -17,9 +17,6 @@ export const RugSchema = new Schema({
     },
     rugImgURL: {
         type: String
-    },
-    created_date: {
-       type: Date,
-       default: Date.now 
     }
-});
+
+}, { timestamps: true });
