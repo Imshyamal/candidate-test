@@ -34,7 +34,8 @@ export class RugAddComponent {
   add(): void {
     let rug = this.rugAddForm.value as Rug;
     this.rugService.add(rug)
-      .then(response => {
+          .then(response => {
+            console.log(rug);
         console.log('response', response);
         this.router.navigate(['/rugs']);
       })

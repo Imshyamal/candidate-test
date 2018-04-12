@@ -42,7 +42,7 @@ export class RugService {
   //Add new Rug
 
   add(rug: Rug): Promise<Rug>{
-    return this.http.post(this.rugsURL, JSON.stringify(Rug), {headers: this.headers})
+    return this.http.post(this.rugsURL, JSON.stringify(rug), {headers: this.headers})
       .toPromise()
       .then(response => response.json() as Rug)
       .catch(this.handleError)
@@ -52,7 +52,7 @@ export class RugService {
   //Update rug
 
   update(rug: Rug): Promise<Rug>{
-    return this.http.put(`${this.rugsURL}/${rug._id}`, JSON.stringify(Rug), {headers: this.headers})
+    return this.http.put(`${this.rugsURL}/${rug._id}`, JSON.stringify(rug), {headers: this.headers})
       .toPromise()
       .then(response => response.json() as Rug)
       .catch(this.handleError)

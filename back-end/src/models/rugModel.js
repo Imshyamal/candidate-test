@@ -9,7 +9,7 @@ export const RugSchema = new Schema({
     },
     rugPrice: {
         type: Number,
-        required: 'Enter rugjjjjj price'
+        required: 'Enter Price price'
     },
   
     rugDescr: {
