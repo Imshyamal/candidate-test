@@ -6,6 +6,7 @@ const Rug = mongoose.model('Rug', RugSchema);
 
 // Controller for adding rug in DB
 export const addNewRug = (req, res) => {
+    console.log(req.body);
     let newRug = new Rug(req.body);
 
     newRug.save((err, rug) => {
@@ -20,6 +21,7 @@ export const addNewRug = (req, res) => {
 // Second Controller for getting all rugs 
 
 export const getRugs = (req, res) => {
+    console.log(req.body);
     Rug.find({}, (err, rug) => {
         if (err) {
             res.send(err);
@@ -32,6 +34,7 @@ export const getRugs = (req, res) => {
 //Third controller for getting specific rug
 
 export const getRugWithID = (req, res) => {
+    console.log(req.body);
     Rug.findById(req.params.inbuiltId, (err, rug) => {
         if (err) {
             res.send(err);

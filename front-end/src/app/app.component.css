@@ -21,6 +21,7 @@ html, body {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
     background: #ffffff;
   }
+
   
   label {
     font-weight: 500;
@@ -31,3 +32,16 @@ html, body {
     color: #ffffff;
   }
   
+
+  #myInput {
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 20px 8px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  
+    
+  }

@@ -1,8 +1,15 @@
 <div class="row form-group">
-  <div class="col-md-9">
+  
+  <div class="col-md-8">
     <h4>All Rugs</h4>
   </div>
-  <div class="col-md-3 text-right">
+
+
+  <div class="col-md-2">
+      <input type="text" ng-model="searchText" placeholder="Search"  id="myInput">
+    </div>
+
+  <div class="col-md-2 text-right">
     <button class="btn btn-success" routerLink="/add">Add New Rug
     </button>
   </div>
@@ -27,7 +34,7 @@
       <th class="text-center">Update</th>
       <th class="text-center">Delete</th>
     </tr>
-    <tr *ngFor="let rug of rugs">
+    <tr *ngFor="let rug of rugs" ng-repeat="rug in rugs | filter:searchText"  >
       <td>{{rug._id}}</td>
       <td>{{rug.rugName}}</td>
       <td>{{rug.rugPrice}}</td>

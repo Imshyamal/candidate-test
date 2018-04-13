@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {AppRoutingModule} from './app-routing.module';
+import {FilterPipeModule} from 'ngx-filter-pipe';
 
 
 //Components
@@ -34,7 +35,8 @@ import { RugService } from './rug.service';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FilterPipeModule
   ],
   providers: [RugService],
   bootstrap: [AppComponent]
